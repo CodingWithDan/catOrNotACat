@@ -1,0 +1,8 @@
+img{
+    width: 500px;
+}
+
+body {
+    background: linear-gradient(to bottom, #fca6df 0%, #eaedf1 100%);
+    background-attachment: fixed;
+  }

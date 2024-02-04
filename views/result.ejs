@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cat or Not a Cat</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="text-center ">
+    
+  <div >
+      <% if(count > 0){ %>
+        <img src="<%= img%>" alt="A cute cat" class="mb-3"/>
+        <h1 class="text-success">This is certainly a cat!</h1>
+      <%}else{%>
+        <img src="<%= img%>" alt="This is not a cat" />
+        <h1 class="text-danger">You've gotta be kitten me. Show me a cat!</h1> 
+      <%}%>
+  </div>
+  <div class="d-flex-column justify-content-sm-center">
+      <form action="/" enctype="multipart/form-data" method="post">
+      <input type="file" name="file-to-upload" />
+      <input type="submit" value="Upload" />
+    </form>
+  </div>
+  </body>
+</html>
